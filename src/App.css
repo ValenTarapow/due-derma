@@ -20,9 +20,10 @@
 }
 
 .section-content h1 {
+  font-family: 'Cormorant Garamond', serif;
   font-size: 3rem;
   margin-bottom: 1rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .section-content p {
@@ -69,15 +70,19 @@
 }
 
 .footer-section h3 {
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #87CEEB;
+  font-weight: 600;
 }
 
 .footer-section h4 {
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1.2rem;
   margin-bottom: 1rem;
   color: #87CEEB;
+  font-weight: 600;
 }
 
 .footer-section p {
@@ -143,8 +148,9 @@
 }
 
 .section-title {
+  font-family: 'Cormorant Garamond', serif;
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
   margin-bottom: 2rem;
   color: #333;
@@ -197,13 +203,15 @@
 }
 
 .doctor-title {
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 600;
   color: #333;
   margin: 0;
 }
 
 .doctor-name {
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1.2rem;
   font-weight: 600;
   color: #333;
