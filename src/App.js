@@ -111,18 +111,61 @@ function App() {
           <div className="footer-section">
             <h4>Contacto</h4>
             <div className="contact-info">
-              <p><i className="fas fa-phone"></i> +54 11 3142-0521</p>
-              <p><i className="fas fa-envelope"></i> duederma@duederma.com.ar </p>
+              <p>
+                <a href="https://api.whatsapp.com/send?phone=5491131420521" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   className="whatsapp-link">
+                  <i className="fab fa-whatsapp"></i> +54 11 3142-0521
+                </a>
+              </p>
+              <p>
+                <a href="mailto:duederma@duederma.com.ar" 
+                   className="email-link">
+                  <i className="fas fa-envelope"></i> duederma@duederma.com.ar
+                </a>
+              </p>
               <p><i className="fas fa-map-marker-alt"></i> Gallo 1671, 1° Piso, Recoleta, Buenos Aires</p>
             </div>
           </div>
           
           <div className="footer-section">
             <h4>Síguenos</h4>
-            <div className="social-links">
-              <a href="#" className="social-link"><i className="fab fa-facebook"></i></a>
-              <a href="#" className="social-link"><i className="fab fa-instagram"></i></a>
-              <a href="#" className="social-link"><i className="fab fa-whatsapp"></i></a>
+            
+            <div className="social-group">
+              <h5 className="social-subtitle">Due Derma</h5>
+              <div className="social-links">
+                <a href="https://www.facebook.com/duederma" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   className="social-link">
+                  <i className="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/duederma" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   className="social-link">
+                  <i className="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+
+            <div className="social-group">
+              <h5 className="social-subtitle">Dra. Maleh</h5>
+              <div className="social-links">
+                <a href="https://www.facebook.com/dradanielamaleh" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   className="social-link">
+                  <i className="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/dradanielamaleh" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   className="social-link">
+                  <i className="fab fa-instagram"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -131,6 +174,14 @@ function App() {
           <p>&copy; 2024 Due Derma. Todos los derechos reservados.</p>
         </div>
       </footer>
+
+      {/* Botón flotante de WhatsApp */}
+      <a href="https://api.whatsapp.com/send?phone=5491131420521" 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         className="whatsapp-float">
+        <i className="fab fa-whatsapp"></i>
+      </a>
     </>
   );
 }
