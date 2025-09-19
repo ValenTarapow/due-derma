@@ -1,6 +1,7 @@
 /* Contenedor principal */
 .scroll-container {
   /* Sin scroll snap */
+  scroll-behavior: smooth;
 }
 
 /* Secciones individuales */
@@ -33,152 +34,25 @@
 
 /* Estilos específicos para cada sección */
 .section-1 {
-  background-color: #87CEEB; /* Light blue */
-  color: #333;
+  background: linear-gradient(135deg, #9299a1 0%, #0c0c0c 100%); /* blueGray to black */
+  color: #ffffff; /* white text for contrast */
 }
 
 .section-2 {
-  background-color: white;
-  color: #333;
+  background: linear-gradient(135deg, #ffffff 0%, #f9f8f7 100%); /* white to lightGray */
+  color: #0c0c0c;
 }
 
 .section-3 {
-  background-color: #D3D3D3; /* Light grey */
-  color: #333;
+  background: linear-gradient(135deg, #e0e3e7 0%, #9299a1 100%); /* lightBlue to blueGray */
+  color: #0c0c0c;
 }
 
 .section-4 {
-  background-color: white;
-  color: #333;
+  background: linear-gradient(135deg, #ffffff 0%, #f9f8f7 100%); /* white to lightGray */
+  color: #0c0c0c;
 }
 
-/* Estilos para el footer */
-.footer {
-  background-color: #333;
-  color: white;
-  padding: 3rem 0 1rem;
-  margin-top: auto;
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
-.footer-section h3 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #87CEEB;
-  font-weight: 600;
-}
-
-.footer-section h4 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  color: #87CEEB;
-  font-weight: 600;
-}
-
-.footer-section p {
-  margin: 0.5rem 0;
-  line-height: 1.6;
-}
-
-.contact-info p {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin: 0.8rem 0;
-}
-
-.contact-info i {
-  color: #87CEEB;
-  width: 20px;
-}
-
-.phone-link {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.phone-link:hover {
-  color: #87CEEB;
-}
-
-.email-link {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.email-link:hover {
-  color: #87CEEB;
-}
-
-.whatsapp-link {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.whatsapp-link:hover {
-  color: #25D366;
-}
-
-.social-group {
-  margin-bottom: 1.5rem;
-}
-
-.social-subtitle {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #87CEEB;
-  margin-bottom: 0.5rem;
-  margin-top: 0;
-}
-
-.social-links {
-  display: flex;
-  gap: 1rem;
-  margin-top: 0.5rem;
-}
-
-.social-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background-color: #87CEEB;
-  color: white;
-  border-radius: 50%;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.social-link:hover {
-  background-color: #5a9fd4;
-}
-
-.social-link i {
-  font-size: 1.2rem;
-}
-
-.footer-bottom {
-  border-top: 1px solid #555;
-  margin-top: 2rem;
-  padding-top: 1rem;
-  text-align: center;
-  color: #ccc;
-}
 
 /* Botón flotante de WhatsApp */
 .whatsapp-float {
@@ -251,6 +125,8 @@
   gap: 3rem;
   width: 100%;
   max-width: 800px;
+  margin: 0 auto;
+  justify-items: center;
 }
 
 .doctor-card {
@@ -325,19 +201,22 @@
 
 .commitment-list li {
   margin: 1rem 0;
-  padding-left: 1.5rem;
+  padding-left: 0;
   position: relative;
   font-size: 1.1rem;
   line-height: 1.6;
   text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.commitment-list li::before {
-  content: "-";
-  position: absolute;
-  left: 0;
-  font-weight: bold;
-  color: #333;
+.commitment-list li i {
+  color: #0c0c0c; /* black */
+  font-size: 1.2rem;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
 }
 
 
@@ -369,10 +248,26 @@
     gap: 2rem;
   }
 
+  .section-3 {
+    height: auto;
+    min-height: 100vh;
+    padding: 2rem 0;
+  }
+
   .doctor-image {
     width: 120px;
     height: 120px;
   }
+
+  /* Ocultar grids en mobile */
+  .staff-section {
+    display: none;
+  }
+  
+  .team-section {
+    display: none;
+  }
+}
 
   .commitment-list {
     margin: 1.5rem 0;
@@ -384,13 +279,14 @@
     margin: 0.8rem 0;
   }
 
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 0 1rem;
-  }
 
-  .footer {
-    padding: 2rem 0 1rem;
+/* Mostrar grids solo en desktop */
+@media (min-width: 769px) {
+  .staff-section {
+    display: block;
+  }
+  
+  .team-section {
+    display: block;
   }
 }

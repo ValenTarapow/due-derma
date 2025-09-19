@@ -1,18 +1,22 @@
 import './App.css';
+import Header from './components/Header';
+import StaffCarousel from './components/StaffCarousel';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
+      <Header />
       {/* Contenedor con snap SOLO para las secciones */}
       <div className="scroll-container">
-        <section className="section section-1">
+        <section id="home" className="section section-1">
           <div className="section-content">
             <h1>Due Derma</h1>
             <p>Dermatología Clínica & Estética</p>
           </div>
         </section>
         
-        <section className="section section-2">
+        <section id="about" className="section section-2">
           <div className="section-content">
             <h1>Quiénes Somos</h1>
             <p>
@@ -29,8 +33,12 @@ function App() {
           </div>
         </section>
 
-        <section className="section section-3">
+        <section id="team" className="section section-3">
           <div className="team-content">
+            {/* Carrusel para mobile */}
+            <StaffCarousel />
+            
+            {/* Grid para desktop - Staff Médico */}
             <div className="staff-section">
               <h2 className="section-title">Staff Médico</h2>
               <div className="doctors-grid">
@@ -85,98 +93,41 @@ function App() {
           </div>
         </section>
 
-        <section className="section section-4">
+        <section id="commitment" className="section section-4">
           <div className="section-content">
             <h1>Compromiso con la Calidad</h1>
             <p>En Due Derma nos comprometemos a:</p>
             <ul className="commitment-list">
-              <li>Brindar atención médica de excelencia</li>
-              <li>Mantener los más altos estándares de bioseguridad</li>
-              <li>Ofrecer tecnología actualizada</li>
-              <li>Proporcionar un ambiente cálido y profesional</li>
-              <li>Respetar la privacidad y confidencialidad de nuestros pacientes</li>
+              <li>
+                <i className="fas fa-stethoscope"></i>
+                Brindar atención médica de excelencia
+              </li>
+              <li>
+                <i className="fas fa-shield-heart"></i>
+                Mantener los más altos estándares de bioseguridad
+              </li>
+              <li>
+                <i className="fas fa-desktop"></i>
+                Ofrecer tecnología actualizada
+              </li>
+              <li>
+                <i className="fas fa-handshake"></i>
+                Proporcionar un ambiente cálido y profesional
+              </li>
+              <li>
+                <i className="fas fa-lock"></i>
+                Respetar la privacidad y confidencialidad de nuestros pacientes
+              </li>
             </ul>
           </div>
         </section>
       </div>
       
       {/* Footer fuera del scroll snap */}
-      <footer className="footer">
-        <div className="footer-content">
-          <div className="footer-section">
-            <h3>Due Derma</h3>
-            <p>Dermatología Clínica & Estética</p>
-          </div>
-          
-          <div className="footer-section">
-            <h4>Contacto</h4>
-            <div className="contact-info">
-              <p>
-                <a href="https://api.whatsapp.com/send?phone=5491131420521" 
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   className="whatsapp-link">
-                  <i className="fab fa-whatsapp"></i> +54 11 3142-0521
-                </a>
-              </p>
-              <p>
-                <a href="mailto:duederma@duederma.com.ar" 
-                   className="email-link">
-                  <i className="fas fa-envelope"></i> duederma@duederma.com.ar
-                </a>
-              </p>
-              <p><i className="fas fa-map-marker-alt"></i> Gallo 1671, 1° Piso, Recoleta, Buenos Aires</p>
-            </div>
-          </div>
-          
-          <div className="footer-section">
-            <h4>Síguenos</h4>
-            
-            <div className="social-group">
-              <h5 className="social-subtitle">Due Derma</h5>
-              <div className="social-links">
-                <a href="https://www.facebook.com/duederma" 
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   className="social-link">
-                  <i className="fab fa-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/duederma" 
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   className="social-link">
-                  <i className="fab fa-instagram"></i>
-                </a>
-              </div>
-            </div>
-
-            <div className="social-group">
-              <h5 className="social-subtitle">Dra. Maleh</h5>
-              <div className="social-links">
-                <a href="https://www.facebook.com/dradanielamaleh" 
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   className="social-link">
-                  <i className="fab fa-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/dradanielamaleh" 
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   className="social-link">
-                  <i className="fab fa-instagram"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div className="footer-bottom">
-          <p>&copy; 2024 Due Derma. Todos los derechos reservados.</p>
-        </div>
-      </footer>
+      <Footer />
 
       {/* Botón flotante de WhatsApp */}
-      <a href="https://api.whatsapp.com/send?phone=5491131420521" 
+      <a href="https://api.whatsapp.com/send?phone=5491131420521&text=Hola%20Due%20Derma,%20quisiera%20recibir%20más%20información%20sobre..." 
          target="_blank" 
          rel="noopener noreferrer" 
          className="whatsapp-float">
