@@ -1,0 +1,25 @@
+{
+  "short_name": "Due Derma",
+  "name": "Due Derma - Dermatología Clínica & Estética",
+  "icons": [
+    {
+      "src": "logo-tab.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "logo-tab.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo-tab.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#e0e3e7",
+  "background_color": "#f9f8f7"
+}

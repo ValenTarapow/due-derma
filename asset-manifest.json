@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/due-derma/static/css/main.9b8dfcf6.css",
+    "main.js": "/due-derma/static/js/main.3cf878c4.js",
+    "static/js/453.9f071fe6.chunk.js": "/due-derma/static/js/453.9f071fe6.chunk.js",
+    "static/media/fa-solid-900.woff2": "/due-derma/static/media/fa-solid-900.0ae4e6254fc19607c79e.woff2",
+    "static/media/fa-brands-400.woff2": "/due-derma/static/media/fa-brands-400.e7461d69dbbff1310a5c.woff2",
+    "static/media/fa-regular-400.woff2": "/due-derma/static/media/fa-regular-400.1f38a564cd9eae27ebc3.woff2",
+    "static/media/fa-v4compatibility.woff2": "/due-derma/static/media/fa-v4compatibility.661bd6b7245d5205d3e1.woff2",
+    "index.html": "/due-derma/index.html",
+    "main.9b8dfcf6.css.map": "/due-derma/static/css/main.9b8dfcf6.css.map",
+    "main.3cf878c4.js.map": "/due-derma/static/js/main.3cf878c4.js.map",
+    "453.9f071fe6.chunk.js.map": "/due-derma/static/js/453.9f071fe6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b8dfcf6.css",
+    "static/js/main.3cf878c4.js"
+  ]
+}
