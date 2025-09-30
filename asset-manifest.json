@@ -1,20 +1,26 @@
 {
   "files": {
-    "main.css": "/due-derma/static/css/main.9b8dfcf6.css",
-    "main.js": "/due-derma/static/js/main.18e3bdf6.js",
+    "main.css": "/due-derma/static/css/main.4d2ee135.css",
+    "main.js": "/due-derma/static/js/main.70e96161.js",
     "static/js/453.9f071fe6.chunk.js": "/due-derma/static/js/453.9f071fe6.chunk.js",
+    "static/media/ludmila-rodriguez.jpeg": "/due-derma/static/media/ludmila-rodriguez.be47f923d1d5b67af89a.jpeg",
+    "static/media/agustina-fernandez-capiet.jpeg": "/due-derma/static/media/agustina-fernandez-capiet.f537632accf630e7a801.jpeg",
+    "static/media/5.jpg": "/due-derma/static/media/5.757356888c32e704ab0a.jpg",
     "static/media/fa-solid-900.woff2": "/due-derma/static/media/fa-solid-900.0ae4e6254fc19607c79e.woff2",
     "static/media/fa-brands-400.woff2": "/due-derma/static/media/fa-brands-400.e7461d69dbbff1310a5c.woff2",
     "static/media/logo.png": "/due-derma/static/media/logo.9749d4037e45710ddad1.png",
+    "static/media/5 (3).jpg": "/due-derma/static/media/5 (3).ee47f5cf526e4f4f72d5.jpg",
+    "static/media/istockphoto-2038457340-612x612 (1).jpg": "/due-derma/static/media/istockphoto-2038457340-612x612 (1).dc31f781355196c4a6f5.jpg",
+    "static/media/daniela-maleh.jpg": "/due-derma/static/media/daniela-maleh.b26f973a7099c7b3d7ca.jpg",
     "static/media/fa-regular-400.woff2": "/due-derma/static/media/fa-regular-400.1f38a564cd9eae27ebc3.woff2",
     "static/media/fa-v4compatibility.woff2": "/due-derma/static/media/fa-v4compatibility.661bd6b7245d5205d3e1.woff2",
     "index.html": "/due-derma/index.html",
-    "main.9b8dfcf6.css.map": "/due-derma/static/css/main.9b8dfcf6.css.map",
-    "main.18e3bdf6.js.map": "/due-derma/static/js/main.18e3bdf6.js.map",
+    "main.4d2ee135.css.map": "/due-derma/static/css/main.4d2ee135.css.map",
+    "main.70e96161.js.map": "/due-derma/static/js/main.70e96161.js.map",
     "453.9f071fe6.chunk.js.map": "/due-derma/static/js/453.9f071fe6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b8dfcf6.css",
-    "static/js/main.18e3bdf6.js"
+    "static/css/main.4d2ee135.css",
+    "static/js/main.70e96161.js"
   ]
 }
