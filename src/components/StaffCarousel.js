@@ -69,8 +69,8 @@ const StaffCarousel = () => {
                     <div className="placeholder-image">Foto</div>
                   </div>
                   <div className="doctor-info">
-                    {member.title && <h3 className="doctor-title">{member.title}</h3>}
                     <h4 className="doctor-name">{member.name}</h4>
+                    {member.title && <h3 className="doctor-title">{member.title}</h3>}
                     <p className="doctor-specialty">{member.specialty}</p>
                   </div>
                 </div>

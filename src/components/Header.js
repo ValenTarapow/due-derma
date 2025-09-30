@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Header.css';
+import logoImage from '../assets/logo.png';
 import colors from '../utils/colors';
 
 const Header = () => {
@@ -28,7 +29,7 @@ const Header = () => {
       <div className="header-container">
         {/* Logo */}
         <div className="logo" onClick={() => scrollToSection('home')}>
-          <img src="/logo.png" alt="Due Derma" className="logo-image" />
+          <img src={logoImage} alt="Due Derma" className="logo-image" />
         </div>
 
         {/* Navegación desktop */}

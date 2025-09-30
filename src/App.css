@@ -13,11 +13,25 @@
   justify-content: center;
 }
 
+/* Sección de compromiso alineada a la izquierda */
+.section-4 {
+  justify-content: flex-start;
+  padding-left: 2rem;
+}
+
 /* Contenido de cada sección */
 .section-content {
   text-align: center;
   max-width: 800px;
   padding: 2rem;
+}
+
+/* Contenido específico para la sección de compromiso */
+.section-4 .section-content {
+  text-align: left;
+  max-width: 50%;
+  margin-right: auto;
+  margin-left: 0;
 }
 
 .section-content h1 {
@@ -34,22 +48,39 @@
 
 /* Estilos específicos para cada sección */
 .section-1 {
-  background: linear-gradient(135deg, #9299a1 0%, #0c0c0c 100%); /* blueGray to black */
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/5.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
   color: #ffffff; /* white text for contrast */
 }
 
 .section-2 {
-  background: linear-gradient(135deg, #ffffff 0%, #f9f8f7 100%); /* white to lightGray */
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url('./assets/5 (3).jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #0c0c0c;
 }
 
 .section-3 {
-  background: linear-gradient(135deg, #e0e3e7 0%, #9299a1 100%); /* lightBlue to blueGray */
-  color: #0c0c0c;
+  background: linear-gradient(135deg, #BCCEED 0%, #5E6F8E 100%); /* #BCCEED to 50% darker */
+  color: #ffffff;
 }
 
 .section-4 {
-  background: linear-gradient(135deg, #ffffff 0%, #f9f8f7 100%); /* white to lightGray */
+  background: 
+    linear-gradient(to right, 
+      rgba(255, 255, 255, 0.8) 0%, 
+      rgba(255, 255, 255, 0.8) 50%,
+      transparent 50%
+    ),
+    url('./assets/istockphoto-2038457340-612x612 (1).jpg') right center,
+    linear-gradient(135deg, #ffffff 0%, #f9f8f7 100%);
+  background-size: auto, cover, auto;
+  background-repeat: no-repeat, no-repeat, no-repeat;
   color: #0c0c0c;
 }
 
@@ -98,49 +129,124 @@
 .team-content {
   width: 100%;
   max-width: 1200px;
-  padding: 2rem;
+  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 
-.section-title {
+/* Títulos principales */
+.main-team-title {
   font-family: 'Cormorant Garamond', serif;
   font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 2rem;
-  color: #333;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
 }
 
-.staff-section, .team-section {
+.team-subtitle {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.staff-section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.doctors-grid {
+/* Sección de la directora destacada */
+.director-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.director-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 350px;
+}
+
+.director-image {
+  width: 180px;
+  height: 220px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #BCCEED;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+.director-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.director-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.director-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.director-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.director-description {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0;
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+/* Grid de miembros del equipo */
+.team-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
   justify-items: center;
 }
 
-.doctor-card {
+.team-member {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 
-.doctor-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 20px;
+.member-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
   overflow: hidden;
   background-color: #f0f0f0;
   display: flex;
@@ -149,43 +255,46 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.member-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.member-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.member-specialty {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.member-description {
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin: 0;
+  opacity: 0.8;
+}
+
 .placeholder-image {
   color: #666;
   font-size: 0.9rem;
   font-weight: 500;
-}
-
-.doctor-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.doctor-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #333;
-  margin: 0;
-}
-
-.doctor-name {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #333;
-  margin: 0;
-}
-
-.doctor-specialty {
-  font-size: 0.9rem;
-  color: #666;
-  margin: 0;
-}
-
-/* Título específico para Equipo Médico más pequeño */
-.team-section .section-title {
-  font-size: 2rem;
 }
 
 /* Estilos para la lista de compromisos */
@@ -243,9 +352,13 @@
     font-size: 2rem;
   }
 
-  .doctors-grid {
+  .team-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  
+  .director-section {
+    display: none;
   }
 
   .section-3 {
@@ -254,20 +367,41 @@
     padding: 2rem 0;
   }
 
-  .doctor-image {
-    width: 120px;
-    height: 120px;
+  .member-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .main-team-title {
+    font-size: 2.5rem;
+  }
+
+  .team-subtitle {
+    font-size: 1rem;
   }
 
   /* Ocultar grids en mobile */
   .staff-section {
     display: none;
   }
-  
-  .team-section {
-    display: none;
+
+  /* Ajustes para la sección de compromiso en mobile */
+  .section-4 {
+    justify-content: center;
+    padding-left: 0;
+    background: 
+      linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+      url('./assets/istockphoto-2038457340-612x612 (1).jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
-}
+
+  .section-4 .section-content {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+  }
 
   .commitment-list {
     margin: 1.5rem 0;
@@ -278,15 +412,11 @@
     font-size: 1rem;
     margin: 0.8rem 0;
   }
-
+}
 
 /* Mostrar grids solo en desktop */
 @media (min-width: 769px) {
   .staff-section {
-    display: block;
-  }
-  
-  .team-section {
     display: block;
   }
 }

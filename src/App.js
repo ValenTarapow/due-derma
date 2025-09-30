@@ -2,6 +2,9 @@ import './App.css';
 import Header from './components/Header';
 import StaffCarousel from './components/StaffCarousel';
 import Footer from './components/Footer';
+import danielaImage from './assets/daniela-maleh.jpg';
+import agustinaImage from './assets/agustina-fernandez-capiet.jpeg';
+import ludmilaImage from './assets/ludmila-rodriguez.jpeg';
 
 function App() {
   return (
@@ -38,54 +41,55 @@ function App() {
             {/* Carrusel para mobile */}
             <StaffCarousel />
             
-            {/* Grid para desktop - Staff Médico */}
+            {/* Grid para desktop - Equipo Médico */}
             <div className="staff-section">
-              <h2 className="section-title">Staff Médico</h2>
-              <div className="doctors-grid">
-                <div className="doctor-card">
-                  <div className="doctor-image">
-                    <div className="placeholder-image">Foto</div>
+              <h1 className="main-team-title">Nuestro Equipo Médico</h1>
+              <p className="team-subtitle">Profesionales comprometidos con tu bienestar</p>
+              
+              {/* Dra. Maleh destacada como directora */}
+              <div className="director-section">
+                <div className="director-card">
+                  <div className="director-image">
+                    <img src={danielaImage} alt="Dra. Daniela Maleh" />
                   </div>
-                  <div className="doctor-info">
-                    <h3 className="doctor-title">Directora Médica</h3>
-                    <h4 className="doctor-name">Dra. Daniela Maleh</h4>
-                    <p className="doctor-specialty">Especialista en Dermatología</p>
-                  </div>
-                </div>
-                
-                <div className="doctor-card">
-                  <div className="doctor-image">
-                    <div className="placeholder-image">Foto</div>
-                  </div>
-                  <div className="doctor-info">
-                    <h3 className="doctor-title">Coordinadora Médica</h3>
-                    <h4 className="doctor-name">Dra. Agustina Fernández Capiet</h4>
-                    <p className="doctor-specialty">Especialista en Dermatología</p>
+                  <div className="director-info">
+                    <h2 className="director-name">Dra. Daniela Maleh</h2>
+                    <h3 className="director-title">Directora Médica</h3>
+                    <p className="director-description">Dermatóloga (M.N 143.541)</p>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div className="team-section">
-              <h2 className="section-title">Equipo Médico</h2>
-              <div className="doctors-grid">
-                <div className="doctor-card">
-                  <div className="doctor-image">
-                    <div className="placeholder-image">Foto</div>
+              {/* Grid de las otras doctoras */}
+              <div className="team-grid">
+                <div className="team-member">
+                  <div className="member-image">
+                    <img src={agustinaImage} alt="Dra. Agustina Fernández Capiet" />
                   </div>
-                  <div className="doctor-info">
-                    <h4 className="doctor-name">Dra. Ludmila Rodríguez</h4>
-                    <p className="doctor-specialty">Especialista en Dermatología</p>
+                  <div className="member-info">
+                    <h4 className="member-name">Dra. Agustina Fernández Capiet</h4>
+                    <p className="member-specialty">Coordinadora Médica</p>
+                    <p className="member-description">Dermatóloga</p>
                   </div>
                 </div>
                 
-                <div className="doctor-card">
-                  <div className="doctor-image">
+                <div className="team-member">
+                  <div className="member-image">
+                    <img src={ludmilaImage} alt="Dra. Ludmila Rodríguez" />
+                  </div>
+                  <div className="member-info">
+                    <h4 className="member-name">Dra. Ludmila Rodríguez</h4>
+                    <p className="member-description">Dermatóloga</p>
+                  </div>
+                </div>
+                
+                <div className="team-member">
+                  <div className="member-image">
                     <div className="placeholder-image">Foto</div>
                   </div>
-                  <div className="doctor-info">
-                    <h4 className="doctor-name">Dra. Malena Colasanti</h4>
-                    <p className="doctor-specialty">Especialista en Dermatología</p>
+                  <div className="member-info">
+                    <h4 className="member-name">Dra. Malena Colasanti</h4>
+                    <p className="member-description">Dermatóloga</p>
                   </div>
                 </div>
               </div>

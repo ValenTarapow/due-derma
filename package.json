@@ -2,6 +2,7 @@
   "name": "due-derma",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ValenTarapow.github.io/due-derma",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.0.1",
     "@fortawesome/free-brands-svg-icons": "^7.0.1",
@@ -23,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,5 +45,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  },
+  "packageManager": "yarn@3.6.4+sha512.e70835d4d6d62c07be76b3c1529cb640c7443f0fe434ef4b6478a5a399218cbaf1511b396b3c56eb03bc86424cff2320f6167ad2fde273aa0df6e60b7754029f"
 }
