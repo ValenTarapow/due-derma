@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './StaffCarousel.css';
+import danielaImage from '../assets/daniela-maleh.jpg';
+import agustinaImage from '../assets/agustina-fernandez-capiet.jpeg';
+import ludmilaImage from '../assets/ludmila-rodriguez.jpeg';
 
 const StaffCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -8,22 +11,26 @@ const StaffCarousel = () => {
     {
       title: "Directora Médica",
       name: "Dra. Daniela Maleh",
-      specialty: "Especialista en Dermatología"
+      specialty: "Dermatóloga (M.N 143.541)",
+      image: danielaImage
     },
     {
       title: "Coordinadora Médica", 
       name: "Dra. Agustina Fernández Capiet",
-      specialty: "Especialista en Dermatología"
+      specialty: "Dermatóloga",
+      image: agustinaImage
     },
     {
       title: "",
       name: "Dra. Ludmila Rodríguez",
-      specialty: "Especialista en Dermatología"
+      specialty: "Dermatóloga",
+      image: ludmilaImage
     },
     {
       title: "",
       name: "Dra. Malena Colasanti",
-      specialty: "Especialista en Dermatología"
+      specialty: "Dermatóloga",
+      image: null
     }
   ];
 
@@ -66,7 +73,11 @@ const StaffCarousel = () => {
               <div key={index} className="carousel-slide">
                 <div className="doctor-card">
                   <div className="doctor-image">
-                    <div className="placeholder-image">Foto</div>
+                    {member.image ? (
+                      <img src={member.image} alt={member.name} />
+                    ) : (
+                      <div className="placeholder-image">Foto</div>
+                    )}
                   </div>
                   <div className="doctor-info">
                     <h4 className="doctor-name">{member.name}</h4>
