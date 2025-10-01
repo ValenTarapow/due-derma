@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/due-derma/static/css/main.4d2ee135.css",
-    "main.js": "/due-derma/static/js/main.70e96161.js",
+    "main.css": "/due-derma/static/css/main.76e39c32.css",
+    "main.js": "/due-derma/static/js/main.6cfbf4e7.js",
     "static/js/453.9f071fe6.chunk.js": "/due-derma/static/js/453.9f071fe6.chunk.js",
     "static/media/ludmila-rodriguez.jpeg": "/due-derma/static/media/ludmila-rodriguez.be47f923d1d5b67af89a.jpeg",
     "static/media/agustina-fernandez-capiet.jpeg": "/due-derma/static/media/agustina-fernandez-capiet.f537632accf630e7a801.jpeg",
@@ -15,12 +15,12 @@
     "static/media/fa-regular-400.woff2": "/due-derma/static/media/fa-regular-400.1f38a564cd9eae27ebc3.woff2",
     "static/media/fa-v4compatibility.woff2": "/due-derma/static/media/fa-v4compatibility.661bd6b7245d5205d3e1.woff2",
     "index.html": "/due-derma/index.html",
-    "main.4d2ee135.css.map": "/due-derma/static/css/main.4d2ee135.css.map",
-    "main.70e96161.js.map": "/due-derma/static/js/main.70e96161.js.map",
+    "main.76e39c32.css.map": "/due-derma/static/css/main.76e39c32.css.map",
+    "main.6cfbf4e7.js.map": "/due-derma/static/js/main.6cfbf4e7.js.map",
     "453.9f071fe6.chunk.js.map": "/due-derma/static/js/453.9f071fe6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d2ee135.css",
-    "static/js/main.70e96161.js"
+    "static/css/main.76e39c32.css",
+    "static/js/main.6cfbf4e7.js"
   ]
 }
