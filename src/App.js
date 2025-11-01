@@ -2,9 +2,10 @@ import './App.css';
 import Header from './components/Header';
 import StaffCarousel from './components/StaffCarousel';
 import Footer from './components/Footer';
-import danielaImage from './assets/daniela-maleh.jpg';
+import danielaImage from './assets/daniela-nueva.jpeg';
 import agustinaImage from './assets/agustina-fernandez-capiet.jpeg';
 import ludmilaImage from './assets/ludmila-rodriguez.jpeg';
+import malenaImage from './assets/malena-colasanti.jpeg';
 
 function App() {
   return (
@@ -22,17 +23,29 @@ function App() {
         <section id="about" className="section section-2">
           <div className="section-content">
             <h1>Quiénes Somos</h1>
-            <p>
-              Due Derma es un centro especializado en dermatología y estética médica,
-              dedicado al bienestar integral de nuestros pacientes. Nos caracterizamos
-              por brindar un enfoque personalizado y profesional, combinando la más alta
-              calidad médica con la calidez humana que cada paciente merece.
-            </p>
-            <p>
-              Nuestro compromiso es ofrecer tratamientos innovadores y seguros, utilizando
-              tecnología de vanguardia en un ambiente cómodo y confiable. Creemos que el
-              cuidado de la piel va más allá de la estética: es salud, bienestar y confianza.
-            </p>
+            {/* Versión completa para desktop */}
+            <div className="about-text-desktop">
+              <p>
+                Due Derma es un centro especializado en dermatología y estética médica,
+                dedicado al bienestar integral de nuestros pacientes. Nos caracterizamos
+                por brindar un enfoque personalizado y profesional, combinando la más alta
+                calidad médica con la calidez humana que cada paciente merece.
+              </p>
+              <p>
+                Nuestro compromiso es ofrecer tratamientos innovadores y seguros, utilizando
+                tecnología de vanguardia en un ambiente cómodo y confiable. Creemos que el
+                cuidado de la piel va más allá de la estética: es salud, bienestar y confianza.
+              </p>
+            </div>
+            {/* Versión resumida para mobile */}
+            <div className="about-text-mobile">
+              <p>
+                Due Derma es un centro especializado en dermatología y estética médica,
+                dedicado al bienestar integral de nuestros pacientes. Ofrecemos tratamientos
+                innovadores y seguros, combinando la más alta calidad médica con un enfoque
+                personalizado y profesional. El cuidado de la piel es salud, bienestar y confianza.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -46,50 +59,49 @@ function App() {
               <h1 className="main-team-title">Nuestro Equipo Médico</h1>
               <p className="team-subtitle">Profesionales comprometidos con tu bienestar</p>
               
-              {/* Dra. Maleh destacada como directora */}
-              <div className="director-section">
-                <div className="director-card">
-                  <div className="director-image">
+              {/* Grid de cards del equipo */}
+              <div className="team-grid">
+                <div className="staff-card director-card">
+                  <div className="staff-card-image director-image">
                     <img src={danielaImage} alt="Dra. Daniela Maleh" />
                   </div>
-                  <div className="director-info">
-                    <h2 className="director-name">Dra. Daniela Maleh</h2>
-                    <h3 className="director-title">Directora Médica</h3>
-                    <p className="director-description">Dermatóloga (M.N 143.541)</p>
+                  <div className="staff-card-info">
+                    <h3 className="staff-card-name">Dra. Daniela Maleh</h3>
+                    <p className="staff-card-title">Directora Médica</p>
+                    <p className="staff-card-specialty">Dermatóloga (M.N 143.541)</p>
                   </div>
                 </div>
-              </div>
 
-              {/* Grid de las otras doctoras */}
-              <div className="team-grid">
-                <div className="team-member">
-                  <div className="member-image">
+                <div className="staff-card">
+                  <div className="staff-card-image">
                     <img src={agustinaImage} alt="Dra. Agustina Fernández Capiet" />
                   </div>
-                  <div className="member-info">
-                    <h4 className="member-name">Dra. Agustina Fernández Capiet</h4>
-                    <p className="member-specialty">Coordinadora Médica</p>
-                    <p className="member-description">Dermatóloga</p>
+                  <div className="staff-card-info">
+                    <h3 className="staff-card-name">Dra. Agustina Fernández Capiet</h3>
+                    <p className="staff-card-title">Coordinadora Médica</p>
+                    <p className="staff-card-specialty">Dermatóloga (MN 176752)</p>
                   </div>
                 </div>
                 
-                <div className="team-member">
-                  <div className="member-image">
+                <div className="staff-card">
+                  <div className="staff-card-image">
                     <img src={ludmilaImage} alt="Dra. Ludmila Rodríguez" />
                   </div>
-                  <div className="member-info">
-                    <h4 className="member-name">Dra. Ludmila Rodríguez</h4>
-                    <p className="member-description">Dermatóloga</p>
+                  <div className="staff-card-info">
+                    <h3 className="staff-card-name">Dra. Ludmila Rodríguez</h3>
+                    <p className="staff-card-title" style={{ visibility: 'hidden' }}>Coordinadora Médica</p>
+                    <p className="staff-card-specialty">Dermatóloga (MN 144952)</p>
                   </div>
                 </div>
                 
-                <div className="team-member">
-                  <div className="member-image">
-                    <div className="placeholder-image">Foto</div>
+                <div className="staff-card">
+                  <div className="staff-card-image">
+                    <img src={malenaImage} alt="Dra. Malena Colasanti" />
                   </div>
-                  <div className="member-info">
-                    <h4 className="member-name">Dra. Malena Colasanti</h4>
-                    <p className="member-description">Dermatóloga</p>
+                  <div className="staff-card-info">
+                    <h3 className="staff-card-name">Dra. Malena Colasanti</h3>
+                    <p className="staff-card-title" style={{ visibility: 'hidden' }}>Coordinadora Médica</p>
+                    <p className="staff-card-specialty">Dermatóloga (MN 145893)</p>
                   </div>
                 </div>
               </div>

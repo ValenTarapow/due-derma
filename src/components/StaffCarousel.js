@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './StaffCarousel.css';
-import danielaImage from '../assets/daniela-maleh.jpg';
+import danielaImage from '../assets/daniela-nueva.jpeg';
 import agustinaImage from '../assets/agustina-fernandez-capiet.jpeg';
 import ludmilaImage from '../assets/ludmila-rodriguez.jpeg';
+import malenaImage from '../assets/malena-colasanti.jpeg';
 
 const StaffCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -17,20 +18,20 @@ const StaffCarousel = () => {
     {
       title: "Coordinadora Médica", 
       name: "Dra. Agustina Fernández Capiet",
-      specialty: "Dermatóloga",
+      specialty: "Dermatóloga (MN 176752)",
       image: agustinaImage
     },
     {
       title: "",
       name: "Dra. Ludmila Rodríguez",
-      specialty: "Dermatóloga",
+      specialty: "Dermatóloga (MN 144952)",
       image: ludmilaImage
     },
     {
       title: "",
       name: "Dra. Malena Colasanti",
-      specialty: "Dermatóloga",
-      image: null
+      specialty: "Dermatóloga (MN 145893)",
+      image: malenaImage
     }
   ];
 
@@ -67,12 +68,12 @@ const StaffCarousel = () => {
         <div className="carousel-wrapper">
           <div 
             className="carousel-track" 
-            style={{ transform: `translateX(-${currentSlide * 25}%)` }}
+            style={{ transform: `translateX(-${currentSlide * (100 / staffMembers.length)}%)` }}
           >
             {staffMembers.map((member, index) => (
               <div key={index} className="carousel-slide">
-                <div className="doctor-card">
-                  <div className="doctor-image">
+                <div className={`doctor-card ${index === 0 ? 'director-card' : ''}`}>
+                  <div className={`doctor-image ${index === 0 ? 'director-image' : ''}`}>
                     {member.image ? (
                       <img src={member.image} alt={member.name} />
                     ) : (
@@ -80,8 +81,12 @@ const StaffCarousel = () => {
                     )}
                   </div>
                   <div className="doctor-info">
-                    <h4 className="doctor-name">{member.name}</h4>
-                    {member.title && <h3 className="doctor-title">{member.title}</h3>}
+                    <h3 className="doctor-name">{member.name}</h3>
+                    {member.title ? (
+                      <p className="doctor-title">{member.title}</p>
+                    ) : (
+                      <p className="doctor-title" style={{ visibility: 'hidden' }}>Coordinadora Médica</p>
+                    )}
                     <p className="doctor-specialty">{member.specialty}</p>
                   </div>
                 </div>
