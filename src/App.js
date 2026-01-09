@@ -41,24 +41,45 @@ function App() {
             {/* Versión completa para desktop */}
             <div className="about-text-desktop">
               <p>
-                Due Derma es un centro especializado en dermatología y estética médica,
-                dedicado al bienestar integral de nuestros pacientes. Nos caracterizamos
-                por brindar un enfoque personalizado y profesional, combinando la más alta
-                calidad médica con la calidez humana que cada paciente merece.
+                Due Derma es un centro especializado en dermatología clínica y estética médica, 
+                fundado por la{' '}
+                <a 
+                  href="https://danielamaleh.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="founder-link"
+                >
+                  Dra. Daniela Maleh
+                </a>.
               </p>
               <p>
-                Nuestro compromiso es ofrecer tratamientos innovadores y seguros, utilizando
-                tecnología de vanguardia en un ambiente cómodo y confiable. Creemos que el
-                cuidado de la piel va más allá de la estética: es salud, bienestar y confianza.
+                Brindamos atención personalizada y de excelencia, donde la calidad médica 
+                se combina con la calidez humana que cada paciente merece.
+              </p>
+              <p>
+                Utilizamos tecnología de vanguardia y tratamientos innovadores en un ambiente 
+                cómodo y seguro. Para nosotros, el cuidado de la piel es mucho más que estética: 
+                es salud, bienestar y confianza.
               </p>
             </div>
             {/* Versión resumida para mobile */}
             <div className="about-text-mobile">
               <p>
-                Due Derma es un centro especializado en dermatología y estética médica,
-                dedicado al bienestar integral de nuestros pacientes. Ofrecemos tratamientos
-                innovadores y seguros, combinando la más alta calidad médica con un enfoque
-                personalizado y profesional. El cuidado de la piel es salud, bienestar y confianza.
+                Due Derma es un centro de dermatología clínica y estética médica, 
+                fundado por la{' '}
+                <a 
+                  href="https://danielamaleh.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="founder-link"
+                >
+                  Dra. Daniela Maleh
+                </a>. 
+                Brindamos atención personalizada con calidad médica y calidez humana.
+              </p>
+              <p>
+                Utilizamos tecnología de vanguardia en un ambiente seguro. 
+                El cuidado de la piel es salud, bienestar y confianza.
               </p>
             </div>
           </div>
@@ -84,6 +105,14 @@ function App() {
                     <h3 className="staff-card-name">Dra. Daniela Maleh</h3>
                     <p className="staff-card-title">Directora Médica</p>
                     <p className="staff-card-specialty">Dermatóloga (M.N 143.541)</p>
+                    <a 
+                      href="https://danielamaleh.com" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="staff-card-link"
+                    >
+                      Ver perfil completo <i className="fas fa-arrow-right"></i>
+                    </a>
                   </div>
                 </div>
 

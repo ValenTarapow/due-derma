@@ -48,7 +48,12 @@
 
 .section-content p {
   font-size: 1.2rem;
-  line-height: 1.6;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.section-content p:last-child {
+  margin-bottom: 0;
 }
 
 /* Versiones del texto "Quiénes Somos" */
@@ -58,6 +63,20 @@
 
 .about-text-mobile {
   display: none;
+}
+
+/* Link a la fundadora */
+.founder-link {
+  color: #5E6F8E;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.founder-link:hover {
+  color: #4a5a75;
+  border-bottom-color: #4a5a75;
 }
 
 @media (max-width: 768px) {
@@ -244,6 +263,24 @@
   color: #0c0c0c;
   height: 100vh;
   overflow: hidden;
+  position: relative;
+}
+
+.section-5::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.25);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.section-5 > * {
+  position: relative;
+  z-index: 1;
 }
 
 .location-content {
@@ -740,6 +777,33 @@
   margin: 0;
   opacity: 0.7;
   line-height: 1.2;
+}
+
+.staff-card-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #5E6F8E;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.staff-card-link:hover {
+  color: #4a5a75;
+}
+
+.staff-card-link i {
+  font-size: 0.7rem;
+  transition: transform 0.3s ease;
+}
+
+.staff-card-link:hover i {
+  transform: translateX(3px);
 }
 
 .placeholder-image {

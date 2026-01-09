@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaGlobe } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -40,6 +40,7 @@ const Footer = () => {
           <SocialGroup>
             <span>Dra. Maleh</span>
             <SocialLinks>
+              <a href="https://dradanielamaleh.com.ar" target="_blank" rel="noreferrer" title="Sitio web"><FaGlobe /></a>
               <a href="https://www.facebook.com/dradanielamaleh" target="_blank" rel="noreferrer"><FaFacebook /></a>
               <a href="https://www.instagram.com/dradanielamaleh" target="_blank" rel="noreferrer"><FaInstagram /></a>
             </SocialLinks>
