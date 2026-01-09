@@ -1398,4 +1398,239 @@
     min-height: 100%;
     border-radius: 15px;
   }
+
+  /* Sección Compromiso - Landscape con poca altura */
+  .section-4 {
+    padding-left: 1rem;
+  }
+
+  .section-4 .section-content {
+    padding: 0.75rem;
+    max-width: 45%;
+  }
+
+  .section-4 .section-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-4 .section-content p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .commitment-list {
+    margin: 0.5rem 0;
+    padding: 0;
+  }
+
+  .commitment-list li {
+    font-size: 0.85rem;
+    margin: 0.4rem 0;
+    gap: 0.5rem;
+    line-height: 1.3;
+  }
+
+  .commitment-list li i {
+    font-size: 0.9rem;
+    width: 18px;
+  }
+}
+
+/* Pantallas anchas con poca altura (ej: 1516x656, monitores ultra-wide) */
+@media (min-width: 1100px) and (max-height: 750px) {
+  /* Sección Equipo Médico */
+  .section-3 {
+    height: 100vh;
+    padding: 0;
+  }
+
+  .team-content {
+    padding: 1.5rem 2rem;
+    gap: 1rem;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .main-team-title {
+    font-size: 2.2rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .team-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1050px;
+    padding: 0.5rem;
+  }
+
+  .team-grid .director-card {
+    grid-column: 1 / -1;
+    padding: 1.5rem 3rem;
+    max-width: 650px;
+    margin-bottom: 1rem;
+    flex-direction: row !important;
+    gap: 2.5rem;
+  }
+
+  .team-grid .director-image {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 0;
+  }
+
+  .team-grid .director-card .staff-card-info {
+    text-align: left;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .team-grid .director-card .staff-card-name {
+    font-size: 1.7rem;
+  }
+
+  .team-grid .director-card .staff-card-title {
+    font-size: 1.2rem;
+  }
+
+  .team-grid .director-card .staff-card-specialty {
+    font-size: 1.1rem;
+  }
+
+  .staff-card {
+    padding: 1rem;
+  }
+
+  .staff-card-image {
+    width: 95px;
+    height: 95px;
+    margin-bottom: 0.6rem;
+  }
+
+  .staff-card-name {
+    font-size: 1.05rem;
+  }
+
+  .staff-card-title {
+    font-size: 0.9rem;
+    height: auto;
+  }
+
+  .staff-card-specialty {
+    font-size: 0.85rem;
+  }
+
+  .staff-card-info {
+    gap: 0.25rem;
+  }
+
+  .staff-card-link {
+    font-size: 0.85rem;
+    margin-top: 0.6rem;
+  }
+
+  /* Sección Cómo Llegar */
+  .section-5 {
+    height: 100vh;
+    padding: 0;
+  }
+
+  .location-content {
+    padding: 0.75rem 2rem;
+    height: calc(100vh - 60px);
+    max-width: 1200px;
+  }
+
+  .location-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .location-wrapper {
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: stretch;
+    flex: 1;
+  }
+
+  .location-info {
+    max-width: 320px;
+    gap: 0.5rem;
+  }
+
+  .location-card-main {
+    padding: 0.75rem;
+  }
+
+  .location-icon-wrapper {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 0.4rem;
+  }
+
+  .location-icon-wrapper i {
+    font-size: 0.9rem;
+  }
+
+  .location-card-main h3 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .location-street {
+    font-size: 0.85rem;
+  }
+
+  .location-city {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .location-cta {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.85rem;
+  }
+
+  .transport-chips {
+    flex-direction: row;
+    gap: 0.4rem;
+  }
+
+  .transport-chip {
+    padding: 0.4rem 0.6rem;
+  }
+
+  .chip-header {
+    margin-bottom: 0.1rem;
+  }
+
+  .chip-header i {
+    font-size: 0.65rem;
+  }
+
+  .chip-header span {
+    font-size: 0.55rem;
+  }
+
+  .chip-detail {
+    font-size: 0.65rem !important;
+    padding-left: 0.9rem;
+  }
+
+  .location-map-wrapper {
+    flex: 1.5;
+    min-width: 350px;
+    min-height: 0;
+  }
+
+  .location-map {
+    min-height: 100%;
+    height: 100%;
+    border-radius: 12px;
+  }
 }
