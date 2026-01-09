@@ -1308,95 +1308,114 @@
     gap: 0.2rem;
   }
 
-  /* Responsive Cómo Llegar - Nest Hub */
+  /* Responsive Cómo Llegar - Nest Hub / Landscape pequeño */
   .section-5 {
     height: 100vh;
-    padding: 0.5rem 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .location-content {
-    padding: 0.5rem 1rem;
-    height: 100%;
+    padding: 0.75rem 2rem;
+    height: auto;
+    max-height: calc(100vh - 60px);
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
   .location-content h1 {
-    font-size: 1.4rem;
-    margin-bottom: 0.75rem;
+    font-size: 1.3rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
   }
 
   .location-wrapper {
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 1.25rem;
     align-items: stretch;
+    justify-content: center;
   }
 
   .location-info {
+    flex: 1;
     max-width: 320px;
-    gap: 0.75rem;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
   }
 
   .location-card-main {
-    padding: 1rem;
+    padding: 0.75rem 1rem;
+    flex: 1;
   }
 
   .location-icon-wrapper {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 0.5rem;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 0.4rem;
   }
 
   .location-icon-wrapper i {
-    font-size: 1rem;
+    font-size: 0.85rem;
   }
 
   .location-card-main h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
   }
 
   .location-street {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   .location-city {
-    font-size: 0.8rem;
-    margin-bottom: 0.75rem;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
   }
 
   .location-cta {
-    font-size: 0.75rem;
-    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
   }
 
   .transport-chips {
     flex-direction: row;
-    gap: 0.5rem;
+    gap: 0.4rem;
   }
 
   .transport-chip {
-    padding: 0.5rem 0.75rem;
+    padding: 0.45rem 0.6rem;
+    flex: 1;
   }
 
   .chip-header span {
-    font-size: 0.65rem;
+    font-size: 0.55rem;
+  }
+
+  .chip-header i {
+    font-size: 0.6rem;
   }
 
   .chip-detail {
-    font-size: 0.8rem;
-    padding-left: 1.25rem;
+    font-size: 0.7rem !important;
+    padding-left: 0.9rem;
   }
 
   .location-map-wrapper {
-    flex: 1.5;
-    min-width: 300px;
+    flex: 1;
+    max-width: 320px;
+    min-height: 0;
   }
 
   .location-map {
-    min-height: 100%;
-    border-radius: 15px;
+    height: 100%;
+    border-radius: 10px;
   }
 
   /* Sección Compromiso - Landscape con poca altura */
@@ -1538,99 +1557,110 @@
   .section-5 {
     height: 100vh;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .location-content {
-    padding: 0.75rem 2rem;
-    height: calc(100vh - 60px);
-    max-width: 1200px;
+    padding: 1.5rem 4rem;
+    height: auto;
+    max-height: calc(100vh - 80px);
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .location-content h1 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
   }
 
   .location-wrapper {
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 3rem;
     align-items: stretch;
-    flex: 1;
+    justify-content: center;
   }
 
   .location-info {
-    max-width: 320px;
-    gap: 0.5rem;
+    max-width: 450px;
+    gap: 1rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   .location-card-main {
-    padding: 0.75rem;
+    padding: 1.5rem 2rem;
+    flex: 1;
   }
 
   .location-icon-wrapper {
-    width: 35px;
-    height: 35px;
-    margin-bottom: 0.4rem;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.75rem;
   }
 
   .location-icon-wrapper i {
-    font-size: 0.9rem;
+    font-size: 1.25rem;
   }
 
   .location-card-main h3 {
-    font-size: 1rem;
-    margin-bottom: 0.4rem;
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
   }
 
   .location-street {
-    font-size: 0.85rem;
+    font-size: 1.15rem;
   }
 
   .location-city {
-    font-size: 0.75rem;
-    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
   }
 
   .location-cta {
-    font-size: 0.7rem;
-    padding: 0.4rem 0.85rem;
+    font-size: 0.95rem;
+    padding: 0.65rem 1.25rem;
   }
 
   .transport-chips {
     flex-direction: row;
-    gap: 0.4rem;
+    gap: 0.75rem;
   }
 
   .transport-chip {
-    padding: 0.4rem 0.6rem;
+    padding: 0.85rem 1rem;
+    flex: 1;
   }
 
   .chip-header {
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.25rem;
   }
 
   .chip-header i {
-    font-size: 0.65rem;
+    font-size: 0.9rem;
   }
 
   .chip-header span {
-    font-size: 0.55rem;
+    font-size: 0.75rem;
   }
 
   .chip-detail {
-    font-size: 0.65rem !important;
-    padding-left: 0.9rem;
+    font-size: 0.95rem !important;
+    padding-left: 1.25rem;
   }
 
   .location-map-wrapper {
-    flex: 1.5;
-    min-width: 350px;
+    flex: 1;
+    max-width: 600px;
     min-height: 0;
   }
 
   .location-map {
-    min-height: 100%;
     height: 100%;
-    border-radius: 12px;
+    border-radius: 15px;
   }
 }
