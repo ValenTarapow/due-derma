@@ -32,11 +32,6 @@ function App() {
             <h1>Due Derma</h1>
             <p className="hero-subtitle">Dermatología Clínica & Estética</p>
             <p className="hero-tagline">Más de {yearsOfExperience} años de trayectoria</p>
-            <div className="hero-buttons">
-              <button className="hero-btn hero-btn-primary" onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}>
-                Ver servicios
-              </button>
-            </div>
           </div>
         </section>
         
