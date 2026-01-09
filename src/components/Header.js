@@ -70,6 +70,14 @@ const Header = () => {
             <li>
               <button 
                 className="nav-link" 
+                onClick={() => scrollToSection('location')}
+              >
+                Cómo Llegar
+              </button>
+            </li>
+            <li>
+              <button 
+                className="nav-link" 
                 onClick={() => scrollToSection('contact')}
               >
                 Contacto
@@ -123,6 +131,14 @@ const Header = () => {
               onClick={() => scrollToSection('commitment')}
             >
               Compromiso
+            </button>
+          </li>
+          <li>
+            <button 
+              className="nav-mobile-link" 
+              onClick={() => scrollToSection('location')}
+            >
+              Cómo Llegar
             </button>
           </li>
           <li>

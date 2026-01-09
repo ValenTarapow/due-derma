@@ -7,16 +7,36 @@ import agustinaImage from './assets/agustina-fernandez-capiet.jpeg';
 import ludmilaImage from './assets/ludmila-rodriguez.jpeg';
 import malenaImage from './assets/malena-colasanti.jpeg';
 
+// Función para calcular años de trayectoria desde Junio 2016
+const calculateYears = () => {
+  const foundingDate = new Date(2016, 5); // Junio 2016 (mes 5 = junio)
+  const today = new Date();
+  let years = today.getFullYear() - foundingDate.getFullYear();
+  // Si aún no llegamos a junio este año, restar 1
+  if (today.getMonth() < foundingDate.getMonth()) {
+    years--;
+  }
+  return years;
+};
+
 function App() {
+  const yearsOfExperience = calculateYears();
+
   return (
     <>
       <Header />
       {/* Contenedor con snap SOLO para las secciones */}
       <div className="scroll-container">
         <section id="home" className="section section-1">
-          <div className="section-content">
+          <div className="section-content hero-content">
             <h1>Due Derma</h1>
-            <p>Dermatología Clínica & Estética</p>
+            <p className="hero-subtitle">Dermatología Clínica & Estética</p>
+            <p className="hero-tagline">Más de {yearsOfExperience} años de trayectoria</p>
+            <div className="hero-buttons">
+              <button className="hero-btn hero-btn-primary" onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}>
+                Ver servicios
+              </button>
+            </div>
           </div>
         </section>
         
@@ -79,7 +99,7 @@ function App() {
                   <div className="staff-card-info">
                     <h3 className="staff-card-name">Dra. Agustina Fernández Capiet</h3>
                     <p className="staff-card-title">Coordinadora Médica</p>
-                    <p className="staff-card-specialty">Dermatóloga (MN 176752)</p>
+                    <p className="staff-card-specialty">Dermatóloga (M.N. 176.752)</p>
                   </div>
                 </div>
                 
@@ -90,7 +110,7 @@ function App() {
                   <div className="staff-card-info">
                     <h3 className="staff-card-name">Dra. Ludmila Rodríguez</h3>
                     <p className="staff-card-title" style={{ visibility: 'hidden' }}>Coordinadora Médica</p>
-                    <p className="staff-card-specialty">Dermatóloga (MN 144952)</p>
+                    <p className="staff-card-specialty">Dermatóloga (M.N. 144.952)</p>
                   </div>
                 </div>
                 
@@ -101,7 +121,7 @@ function App() {
                   <div className="staff-card-info">
                     <h3 className="staff-card-name">Dra. Malena Colasanti</h3>
                     <p className="staff-card-title" style={{ visibility: 'hidden' }}>Coordinadora Médica</p>
-                    <p className="staff-card-specialty">Dermatóloga (MN 145893)</p>
+                    <p className="staff-card-specialty">Dermatóloga (M.N. 145.893)</p>
                   </div>
                 </div>
               </div>
@@ -135,6 +155,70 @@ function App() {
                 Respetar la privacidad y confidencialidad de nuestros pacientes
               </li>
             </ul>
+          </div>
+        </section>
+
+        <section id="location" className="section section-5">
+          <div className="section-content location-content">
+            <h1>Cómo Llegar</h1>
+            <div className="location-wrapper">
+              <div className="location-info">
+                {/* Tarjeta principal de ubicación */}
+                <div className="location-card-main">
+                  <div className="location-icon-wrapper">
+                    <i className="fas fa-map-marker-alt"></i>
+                  </div>
+                  <h3>Nuestra Ubicación</h3>
+                  <p className="location-street">Gallo 1671, 1° Piso</p>
+                  <p className="location-city">Recoleta, Buenos Aires</p>
+                  <a 
+                    href="https://maps.google.com/?q=Due+Derma+Gallo+1671+Buenos+Aires" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="location-cta"
+                  >
+                    Ver en Google Maps <i className="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+
+                {/* Chips de transporte */}
+                <div className="transport-chips">
+                  <div className="transport-chip">
+                    <div className="chip-header">
+                      <i className="fas fa-subway"></i>
+                      <span>Subte</span>
+                    </div>
+                    <p className="chip-detail">D · Estación Agüero</p>
+                  </div>
+                  <div className="transport-chip">
+                    <div className="chip-header">
+                      <i className="fas fa-bus"></i>
+                      <span>Colectivos</span>
+                    </div>
+                    <p className="chip-detail">12 · 29 · 39 · 68 · 152</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mapa con marco premium */}
+              <div className="location-map-wrapper">
+                <div className="location-map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.510779000328!2d-58.408208200000004!3d-34.591243399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb79402bedc7%3A0x49bb649c0037b9f6!2sDue%20Derma%20-%20Dermatolog%C3%ADa%20Cl%C3%ADnica%20y%20Est%C3%A9tica!5e0!3m2!1ses-419!2sar!4v1767938476781!5m2!1ses-419!2sar"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Ubicación Due Derma"
+                  ></iframe>
+                </div>
+                <div className="map-overlay">
+                  <span>Abrir mapa</span>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>

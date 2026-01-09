@@ -16,6 +16,17 @@ html {
   color-scheme: light only;
 }
 
+/* Prevenir modo oscuro */
+@media (prefers-color-scheme: dark) {
+  html,
+  body,
+  #root {
+    color-scheme: light only !important;
+    background-color: #ffffff !important;
+    color: #0c0c0c !important;
+  }
+}
+
 body {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -24,6 +35,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #ffffff;
   color: #0c0c0c;
+  color-scheme: light only;
 }
 
 #root {

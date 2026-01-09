@@ -2,7 +2,7 @@
   "name": "due-derma",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ValenTarapow.github.io/due-derma",
+  "homepage": ".",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.0.1",
     "@fortawesome/free-brands-svg-icons": "^7.0.1",

@@ -18,19 +18,19 @@ const StaffCarousel = () => {
     {
       title: "Coordinadora Médica", 
       name: "Dra. Agustina Fernández Capiet",
-      specialty: "Dermatóloga (MN 176752)",
+      specialty: "Dermatóloga (M.N. 176.752)",
       image: agustinaImage
     },
     {
       title: "",
       name: "Dra. Ludmila Rodríguez",
-      specialty: "Dermatóloga (MN 144952)",
+      specialty: "Dermatóloga (M.N. 144.952)",
       image: ludmilaImage
     },
     {
       title: "",
       name: "Dra. Malena Colasanti",
-      specialty: "Dermatóloga (MN 145893)",
+      specialty: "Dermatóloga (M.N. 145.893)",
       image: malenaImage
     }
   ];
